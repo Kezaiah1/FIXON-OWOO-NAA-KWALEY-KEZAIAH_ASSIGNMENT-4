@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form</title>
+</head>
+<body bgcolor="turquoise">
+   <h1><p align="center"><strong>FILL THIS FORM</strong></p></h1> 
+     <form action="results.html" method="GET" enctype="multipart/form-data">
+        <div>
+           <label for="name"><strong>Name:</strong></label>
+            <input type="text" name="name" id="name" placeholder="Username" required>
+        </div><br/>
+        <div>
+            <label for="email"><strong>Email:</strong></label>
+            <input type="email" name="email" id="email" required>
+        </div><br/>
+        <div>
+            <label for="age"><strong>Age:</strong></label>
+            <input type="number" name="age" id="age" min="1" max="100" step="1" required>
+        </div><br/>
+        <div>
+            <label for="date"><strong>Date of Birth:</strong></label>
+            <input type="date" name="date" id="date" min="2000-01-01" required>
+        </div><br/>
+        <div>
+            <strong>Gender:</strong>
+            <div>
+                <label for="male">Male</label>
+                <input type="radio" name="Gender" id="male" value="male">
+                <label for="female">Female</label>
+                <input type="radio" name="Gender" id="female" value="female">
+            </div><br/>
+        </div>
+        <div>
+            <strong>Favourite Food:</strong>
+            <div>
+                <label for="fruits">Fruits</label>
+                <input type="checkbox" name="fruits" id="fruits">
+            </div>
+            <div>
+                <label for="Vegetables">Vegetables</label>
+                <input type="checkbox" name="Vegetables" id="Vegetables">
+            </div>
+            <div>
+                <label for="fruit juice">Fruit Juice</label>
+                <input type="checkbox" name="fruit juice" id="fruit juice">
+            </div>
+            <div>
+                <label for="local dishes">Local dishes</label>
+                <input type="checkbox" name="local dishes" id="local dishes">
+            </div>    
+            <div>
+                <label for="Continental dishes">Continental dishes</label>
+                <input type="checkbox" name="continental dishes" id="continental dishes">
+            </div>
+            </div><br/>
+        </div>
+        <div>
+            <label for="eyecolour"><strong>Eye Colour</strong></label>
+            <select name="eyecolour" id="eyecolour">
+              <option value="brown">Brown</option>
+              <option value="blue">Blue</option>
+              <option value="black">Black</option>
+            </select>
+        </div><br/>
+        <div>
+            <label for="bio"><strong>Bio</strong></label>
+            <textarea name="bio" id="bio" placeholder="Tell us a brief about yourself"></textarea>
+        </div><br/>
+        <input type="hidden" name="hidden" value="Hello">
+        <div>
+            <label for="file"><strong>File</strong></label>
+            <input type="file" name="file" id="file">
+        </div><br/>
+        <div>
+            <label for="Phone"><strong>Phone:</strong></label>
+             <input type="tel" name="Phone" id="Phone">
+        </div><br/>
+        <div>
+            <label for="url"><strong>URL:</strong></label>
+            <input type="url" name="url" id="url">
+        </div><br/>
+        <div>
+            <label for="color"> <strong>Color</strong></label>
+            <input type="color" name="color" id="color">
+        </div>
+        <div>
+            <label><strong>Password:</strong></label>
+            <input type="password" name="password" required>
+        </div><br/>
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+     </form>
+</body>
+</html>
